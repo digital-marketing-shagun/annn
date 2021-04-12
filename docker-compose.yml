@@ -1,0 +1,17 @@
+version: '3.4'
+services:
+    mynode:
+        image: mynode
+        build: 
+            context: .
+            dockerfile: ./Dockerfile
+        environment:
+                NODE_ENV:  test  
+        ports:
+            - "8888:8888"
+
+
+
+
+
+  
